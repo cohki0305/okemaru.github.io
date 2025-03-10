@@ -75,6 +75,11 @@ ul, ol {
     background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23FFD166' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
+.section--customize {
+    background-color: #fff8f0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF6B35' fill-opacity='0.1' fill-rule='nonzero'%3E%3Cpath d='M29 58.58l7.38-7.39A30.95 30.95 0 0 1 29 37.84a30.95 30.95 0 0 1-7.38 13.36l7.37 7.38zm1.4 1.41l.01.01h-2.84l-7.37-7.38A30.95 30.95 0 0 1 6.84 60H0v-1.02a28.9 28.9 0 0 0 18.79-7.78L0 32.41v-4.84L18.78 8.79A28.9 28.9 0 0 0 0 1.02V0h6.84a30.95 30.95 0 0 1 13.35 7.38L27.57 0h2.84l7.39 7.38A30.95 30.95 0 0 1 51.16 0H60v27.58-.01V60h-8.84a30.95 30.95 0 0 1-13.37-7.4L30.4 60zM29 1.41l-7.4 7.38A30.95 30.95 0 0 1 29 22.16 30.95 30.95 0 0 1 36.38 8.8L29 1.4zM58 1A28.9 28.9 0 0 0 39.2 8.8L58 27.58V1.02zm-20.2 9.2A28.9 28.9 0 0 0 30.02 29h26.56L37.8 10.21zM30.02 31a28.9 28.9 0 0 0 7.77 18.79l18.79-18.79H30.02zm9.18 20.2A28.9 28.9 0 0 0 58 59V32.4L39.2 51.19zm-19-1.4a28.9 28.9 0 0 0 7.78-18.8H1.41l18.8 18.8zm7.78-20.8A28.9 28.9 0 0 0 20.2 10.2L1.41 29h26.57z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
 .section--voice {
     background-color: #f8f5ff;
     background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234CB944' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -353,10 +358,98 @@ ul, ol {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
 }
 
 .hero__content {
-    max-width: 700px;
+    max-width: 100%;
+}
+
+.hero__form {
+    max-width: 100%;
+}
+
+.hero-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    color: #2E294E;
+    border: 3px solid #FFD166;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-form::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFD166;
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.hero-form__title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #FF6B35;
+}
+
+.hero-form__subtitle {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #2E294E;
+}
+
+.hero-form .form__group {
+    margin-bottom: 1.5rem;
+}
+
+.hero-form .form__input,
+.hero-form .form__select {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 107, 53, 0.3);
+}
+
+.hero-form .form__input:focus,
+.hero-form .form__select:focus {
+    border-color: #FF6B35;
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.2);
+}
+
+.hero-form .form__submit {
+    margin-top: 2.5rem;
+}
+
+.hero-form .btn {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-form .btn::after {
+    content: '→';
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.hero-form .btn:hover::after {
+    opacity: 1;
+    right: 15px;
 }
 
 .hero__title {
@@ -560,6 +653,132 @@ ul, ol {
 
 .work-card:hover .work-card__image img {
     transform: scale(1.05);
+}
+
+/* ===== トラックカスタマイズセクション ===== */
+.customize-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.customize-card {
+    background-color: #fff;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    padding: 3rem 2rem;
+    border-left: 5px solid #FF6B35;
+    position: relative;
+}
+
+.customize-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 209, 102, 0.1);
+    border-radius: 0 0 0 100%;
+    z-index: 0;
+}
+
+.customize-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.customize-card__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 2rem;
+    background: linear-gradient(45deg, #FF6B35, #FFD166);
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.customize-card__icon span {
+    font-size: 3.6rem;
+    color: #fff;
+}
+
+.customize-card__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2E294E;
+    position: relative;
+    z-index: 1;
+}
+
+.customize-card__text {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.customize-card__features {
+    position: relative;
+    z-index: 1;
+}
+
+.customize-card__features li {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.customize-card__features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #4CB944;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.customize-cta {
+    margin-top: 5rem;
+    text-align: center;
+    background-color: rgba(255, 209, 102, 0.1);
+    padding: 3rem;
+    border-radius: 2rem;
+    border: 2px dashed #FFD166;
+}
+
+.customize-cta p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #2E294E;
+}
+
+.customize-cta .btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.customize-cta .btn::after {
+    content: '→';
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.customize-cta .btn:hover::after {
+    opacity: 1;
+    right: 15px;
 }
 
 /* ===== 社員の声セクション ===== */
@@ -1047,6 +1266,22 @@ ul, ol {
     }
 }
 
+@media (max-width: 992px) {
+    .hero__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero__content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero__buttons {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
     .header__menu, .header__nav .btn {
         display: none;
@@ -1071,6 +1306,14 @@ ul, ol {
 
     .hero__buttons .btn {
         width: 100%;
+    }
+
+    .hero-form {
+        padding: 2rem;
+    }
+
+    .hero-form__title {
+        font-size: 2.4rem;
     }
 
     .section {
