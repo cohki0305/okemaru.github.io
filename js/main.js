@@ -1,14 +1,16 @@
 /**
  * おけまる配送 - メインJavaScript
+ * ポップでフレンドリーなサイト用にアニメーションを強化
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // AOS (Animate On Scroll) 初期化
+    // AOS (Animate On Scroll) 初期化 - よりポップな動きに調整
     AOS.init({
         duration: 800,
-        easing: 'ease',
-        once: true,
-        offset: 100
+        easing: 'ease-out-back',
+        once: false,
+        offset: 100,
+        delay: 100
     });
 
     // Particles.js 初期化
@@ -28,74 +30,74 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // フォームバリデーション
     initFormValidation();
+
+    // 画像ホバーエフェクト強化
+    initImageHoverEffects();
+
+    // ボタンクリックエフェクト
+    initButtonEffects();
+
+    // カードのランダム回転
+    initRandomRotation();
 });
 
 /**
- * Particles.js 初期化
+ * Particles.js 初期化 - 水玉模様のアニメーションに変更
  */
 function initParticles() {
     if (document.getElementById('particles-js')) {
         particlesJS('particles-js', {
             "particles": {
                 "number": {
-                    "value": 80,
+                    "value": 60,  // 水玉の数を調整
                     "density": {
                         "enable": true,
-                        "value_area": 800
+                        "value_area": 1000
                     }
                 },
                 "color": {
-                    "value": "#ffffff"
+                    "value": ["#ffffff", "#FFD166", "#4CB944", "#ffffff"]  // 水玉の色
                 },
                 "shape": {
-                    "type": "circle",
+                    "type": "circle",  // 円形のみに設定
                     "stroke": {
                         "width": 0,
                         "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
                     }
                 },
                 "opacity": {
-                    "value": 0.5,
-                    "random": false,
+                    "value": 0.8,  // 不透明度を上げる
+                    "random": true,
                     "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
+                        "enable": true,
+                        "speed": 0.5,
+                        "opacity_min": 0.4,
                         "sync": false
                     }
                 },
                 "size": {
-                    "value": 3,
+                    "value": 15,  // 水玉のサイズを大きく
                     "random": true,
                     "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
+                        "enable": true,
+                        "speed": 2,
+                        "size_min": 5,
                         "sync": false
                     }
                 },
                 "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
+                    "enable": false  // 線を無効化
                 },
                 "move": {
                     "enable": true,
-                    "speed": 2,
+                    "speed": 1.5,  // ゆっくり動く
                     "direction": "none",
-                    "random": false,
+                    "random": true,
                     "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
+                    "out_mode": "bounce",  // 画面端で跳ね返る
+                    "bounce": true,
                     "attract": {
-                        "enable": false,
-                        "rotateX": 600,
-                        "rotateY": 1200
+                        "enable": false
                     }
                 }
             },
@@ -104,37 +106,24 @@ function initParticles() {
                 "events": {
                     "onhover": {
                         "enable": true,
-                        "mode": "grab"
+                        "mode": "bubble"
                     },
                     "onclick": {
                         "enable": true,
-                        "mode": "push"
+                        "mode": "push"  // クリックで水玉を追加
                     },
                     "resize": true
                 },
                 "modes": {
-                    "grab": {
-                        "distance": 140,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
                     "bubble": {
-                        "distance": 400,
-                        "size": 40,
+                        "distance": 150,
+                        "size": 20,  // ホバー時に大きくなる
                         "duration": 2,
-                        "opacity": 8,
+                        "opacity": 1,
                         "speed": 3
                     },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
-                    },
                     "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
+                        "particles_nb": 3  // クリックで追加される水玉の数
                     }
                 }
             },
@@ -144,7 +133,7 @@ function initParticles() {
 }
 
 /**
- * タイプライターエフェクト
+ * タイプライターエフェクト - よりフレンドリーな文言に変更
  */
 function initTypewriter() {
     const typewriterElement = document.getElementById('typewriter');
@@ -152,9 +141,10 @@ function initTypewriter() {
 
     const phrases = [
         '乗りたいトラックがある？おけまる配送なら自由に選択できます！',
-        '短い労働時間で、プライベートも充実。',
-        '未経験でも安心のサポート体制。',
-        'ホワイトな働き方を実現します。'
+        '短い労働時間で、プライベートも充実♪',
+        '未経験でも安心！社長自らサポートします！',
+        'アットホームな職場で楽しく働こう！',
+        'トラック好きにはたまらない環境です！'
     ];
 
     let currentPhraseIndex = 0;
@@ -337,7 +327,7 @@ function initFormValidation() {
 }
 
 /**
- * フォーム送信成功時の処理
+ * フォーム送信成功時の処理 - よりフレンドリーなメッセージに
  */
 function showFormSuccess() {
     const form = document.getElementById('application-form');
@@ -346,7 +336,14 @@ function showFormSuccess() {
     // 成功メッセージ
     const successMessage = document.createElement('div');
     successMessage.className = 'form-success-message';
-    successMessage.innerHTML = '<p>応募が完了しました。担当者からのご連絡をお待ちください。</p>';
+    successMessage.innerHTML = `
+        <div style="text-align: center; padding: 20px;">
+            <span style="font-size: 5rem; display: block;">🎉</span>
+            <h3 style="margin-bottom: 15px; color: #FF6B35; font-size: 2.4rem;">応募ありがとうございます！</h3>
+            <p>応募が完了しました。社長から直接ご連絡させていただきます！</p>
+            <p style="margin-top: 10px; font-size: 1.4rem;">（通常3営業日以内にご連絡いたします）</p>
+        </div>
+    `;
 
     // フォームを非表示にして成功メッセージを表示
     form.style.display = 'none';
@@ -354,10 +351,67 @@ function showFormSuccess() {
 
     // スクロール
     successMessage.scrollIntoView({ behavior: 'smooth' });
+
+    // 紙吹雪エフェクト
+    createConfetti();
 }
 
 /**
- * フォームエラー時の処理
+ * 紙吹雪エフェクト
+ */
+function createConfetti() {
+    const confettiCount = 200;
+    const container = document.querySelector('.recruit-form');
+
+    for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+
+        // ランダムな色
+        const colors = ['#FF6B35', '#FFD166', '#4CB944', '#ffffff'];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+
+        // ランダムな位置と大きさ
+        const left = Math.random() * 100;
+        const width = Math.random() * 10 + 5;
+        const height = width * 0.4;
+
+        // スタイル設定
+        confetti.style.cssText = `
+            position: absolute;
+            left: ${left}%;
+            top: -20px;
+            width: ${width}px;
+            height: ${height}px;
+            background-color: ${color};
+            opacity: ${Math.random() * 0.6 + 0.4};
+            transform: rotate(${Math.random() * 360}deg);
+            animation: fall ${Math.random() * 3 + 2}s linear forwards;
+        `;
+
+        container.appendChild(confetti);
+
+        // アニメーション終了後に削除
+        setTimeout(() => {
+            confetti.remove();
+        }, 5000);
+    }
+
+    // CSSアニメーション
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes fall {
+            to {
+                transform: translateY(500px) rotate(${Math.random() * 360 + 180}deg);
+                opacity: 0;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+/**
+ * フォームエラー時の処理 - よりフレンドリーなメッセージに
  */
 function showFormError() {
     const form = document.getElementById('application-form');
@@ -372,11 +426,160 @@ function showFormError() {
     // エラーメッセージ
     const errorMessage = document.createElement('div');
     errorMessage.className = 'form-error-message';
-    errorMessage.innerHTML = '<p>入力内容に誤りがあります。必須項目を確認してください。</p>';
+    errorMessage.innerHTML = `
+        <div style="padding: 15px; background-color: rgba(255, 107, 53, 0.1); border-radius: 10px; margin-bottom: 20px;">
+            <p style="display: flex; align-items: center;">
+                <span style="font-size: 2rem; margin-right: 10px;">😅</span>
+                あれれ？入力内容に不足があるようです。赤い「必須」の項目を確認してみてください！
+            </p>
+        </div>
+    `;
 
     // エラーメッセージを表示
     form.querySelector('.form__submit').before(errorMessage);
 
+    // 必須項目を強調
+    const requiredFields = form.querySelectorAll('[required]');
+    requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+            field.style.borderColor = '#FF6B35';
+            field.style.backgroundColor = 'rgba(255, 107, 53, 0.05)';
+
+            // ラベルを強調
+            const label = form.querySelector(`label[for="${field.id}"]`);
+            if (label) {
+                label.style.color = '#FF6B35';
+            }
+        }
+    });
+
     // スクロール
     errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    // シェイクエフェクト
+    errorMessage.style.animation = 'shake 0.5s ease-in-out';
+
+    // CSSアニメーション
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-10px); }
+            40%, 80% { transform: translateX(10px); }
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+/**
+ * 画像ホバーエフェクト強化
+ */
+function initImageHoverEffects() {
+    // 会社画像のホバーエフェクト強化
+    const companyImages = document.querySelectorAll('.company__image');
+    companyImages.forEach(image => {
+        image.addEventListener('mouseenter', function() {
+            this.style.transition = 'all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+        });
+    });
+
+    // 社員の声カードのホバーエフェクト
+    const voiceCards = document.querySelectorAll('.voice-card');
+    voiceCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            // 引用符のアニメーション
+            const quote = document.createElement('span');
+            quote.textContent = '"';
+            quote.style.cssText = `
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 8rem;
+                color: rgba(255, 107, 53, 0.2);
+                font-family: serif;
+                transform: rotate(180deg);
+                opacity: 0;
+                transition: all 0.5s ease;
+            `;
+            this.appendChild(quote);
+
+            setTimeout(() => {
+                quote.style.opacity = '1';
+                quote.style.top = '10px';
+            }, 10);
+
+            card.addEventListener('mouseleave', function() {
+                quote.style.opacity = '0';
+                setTimeout(() => {
+                    quote.remove();
+                }, 500);
+            });
+        });
+    });
+}
+
+/**
+ * ボタンクリックエフェクト
+ */
+function initButtonEffects() {
+    const buttons = document.querySelectorAll('.btn');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            // クリック位置を基準にしたリップルエフェクト
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            ripple.style.cssText = `
+                position: absolute;
+                top: ${y}px;
+                left: ${x}px;
+                width: 0;
+                height: 0;
+                background-color: rgba(255, 255, 255, 0.4);
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                pointer-events: none;
+            `;
+
+            this.style.position = this.style.position || 'relative';
+            this.style.overflow = 'hidden';
+            this.appendChild(ripple);
+
+            // アニメーション
+            const animation = ripple.animate([
+                { width: '0', height: '0', opacity: 1 },
+                { width: '400px', height: '400px', opacity: 0 }
+            ], {
+                duration: 600,
+                easing: 'ease-out'
+            });
+
+            animation.onfinish = () => ripple.remove();
+        });
+    });
+}
+
+/**
+ * カードのランダム回転
+ */
+function initRandomRotation() {
+    // 仕事カードにランダムな回転を適用
+    const workCards = document.querySelectorAll('.work-card');
+    workCards.forEach(card => {
+        const rotation = (Math.random() * 2 - 1) * 1.5; // -1.5度から1.5度
+        card.style.transform = `rotate(${rotation}deg)`;
+
+        // ホバー時に回転をリセット
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px) scale(1.02) rotate(0deg)';
+        });
+
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = `rotate(${rotation}deg)`;
+        });
+    });
 }
