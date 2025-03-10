@@ -1267,6 +1267,12 @@ ul, ol {
 }
 
 @media (max-width: 992px) {
+    .hero {
+        height: auto;
+        min-height: auto;
+        padding: 12rem 0 6rem;
+    }
+
     .hero__container {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -1280,6 +1286,11 @@ ul, ol {
     .hero__buttons {
         justify-content: center;
     }
+
+    .hero-form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1289,6 +1300,10 @@ ul, ol {
 
     .header__toggle {
         display: block;
+    }
+
+    .hero {
+        padding: 10rem 0 5rem;
     }
 
     .hero__title {
@@ -1316,6 +1331,23 @@ ul, ol {
         font-size: 2.4rem;
     }
 
+    .hero-form__subtitle {
+        font-size: 1.4rem;
+    }
+
+    .hero-form .form__group {
+        margin-bottom: 1.2rem;
+    }
+
+    .hero-form .form__input,
+    .hero-form .form__select {
+        padding: 1rem;
+    }
+
+    .hero-form .form__submit {
+        margin-top: 2rem;
+    }
+
     .section {
         padding: 8rem 0;
     }
@@ -1324,12 +1356,31 @@ ul, ol {
         font-size: 3.2rem;
     }
 
+    .customize-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .customize-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .customize-cta {
+        padding: 2.5rem 1.5rem;
+    }
+
     .recruit-info__grid {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 576px) {
+    .hero {
+        padding: 8rem 0 4rem;
+    }
+
     .hero__title {
         font-size: 3.2rem;
     }
@@ -1338,12 +1389,51 @@ ul, ol {
         font-size: 1.8rem;
     }
 
+    .hero__typewriter {
+        height: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .typewriter {
+        font-size: 1.6rem;
+    }
+
+    .hero-form__title {
+        font-size: 2.2rem;
+    }
+
     .section {
         padding: 6rem 0;
     }
 
     .section__title {
         font-size: 2.8rem;
+    }
+
+    .section__subtitle {
+        font-size: 2rem;
+    }
+
+    .section__description {
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+    }
+
+    .customize-card__icon {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .customize-card__icon span {
+        font-size: 3.2rem;
+    }
+
+    .customize-card__title {
+        font-size: 2rem;
+    }
+
+    .customize-cta p {
+        font-size: 1.8rem;
     }
 
     .company__info {
